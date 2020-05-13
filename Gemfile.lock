@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    googlecharts (1.6.12)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  googlecharts
+
+BUNDLED WITH
+   2.1.4
