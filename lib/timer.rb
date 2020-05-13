@@ -6,7 +6,7 @@ def timer(method, n = 5000)
     array.send(method)
     stop = Time.now
     diff = stop - start
-    puts diff, n
+    puts diff
     n += 5000
   end
 end
