@@ -13,10 +13,13 @@ def timer(my_method, n = 5000)
     n_values << n
     n += 5000
   end
+
   puts times
   puts n_values
-  plot_chart(my_method, n_values, times)
+  # plot_chart(my_method, n_values, times)
 end
+
+
 
 def create_array(number)
   array = Array.new(number) { rand(1..100) }
@@ -32,11 +35,11 @@ def plot_chart(my_method, n_values, times)
                 :bg => 'EFEFEF',
                 :legend => ['time to complete'],
                 :data => [n_values, times],
-                :filename => "charts/line_graph_for_#{my_method}.png",
+                :filename => "charts/line_graph_for_comparing_#{my_method}.png",
                 :stacked => false,
                 :legend_position => 'top',
                 :axis_with_labels => [['x'], ['y']],
-                :max_value => 1,
+                :max_value => n_values.max,
                 :min_value => 0,
                 :axis_labels => [["5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100"]],
             )
